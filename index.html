@@ -676,21 +676,9 @@
         const userColors = colors.slice(0, userSelection.length).map(c => c.name).join(' + ');
 
         return `
-#Sharon万花筒 #专业配色 #色彩理论
-✨ Sharon万花筒方案 No.${num} | ${mode}
-
-🎨 **配色公式**
-${userColors}（你的灵感）+ ${colors.slice(userSelection.length).map(c => c.name).join(' + ')}
-
-💡 **专业解析**
-${explanation}
-
-👗 **场景适配**：${scenario.scene}  
-📅 **季节建议**：${scenario.season}
 
 🏷️ **关键词**：${colorTags} #OOTD #高级感穿搭
 
-> Sharon提示：此方案基于**国际标准色相环**计算生成，非随机搭配，可放心参考！
         `.trim();
     }
 
